@@ -4,27 +4,26 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgb(210, 219, 226);
+    font-family: "sans-serif";
 }
 
 /* ... */
 
 header
 {
+    background-color: rgb(210, 219, 226);
     width: 100%;
     height: 6em;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px black solid;
-    box-shadow: black 0 3px 10px;
-    margin-bottom: 2em;
+    border-bottom: 2px black solid;
+    box-shadow: black 0 5px 15px;
 }
 #logo
 {
     width: 7em;
-    height: 5em;
+    height: 5.5em;
 }
 nav
 {
@@ -34,7 +33,7 @@ nav
     align-items: center;
     color: rgb(58, 59, 59)
 }
-a, a:visited
+nav a,nav a:visited
 {
     color: rgb(58, 59, 59);
 }
@@ -47,14 +46,239 @@ a, a:visited
 
 .section_1
 {
-    height: 20em;
-    width: 100vw;
+    width: 100%;
+    height: 35em;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-
+    justify-content: space-around;
+    background: rgb(159,160,160);
+    background: linear-gradient(351deg, rgba(159,160,160,1) 0%, rgba(13,50,96,1) 72%);
 }
-.cda
+.CDA
+{
+    width: 20em;
+    font-size: 1.5em;
+    color: aliceblue;
+    text-shadow: black 1px 1px 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.CDA h1
+{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.CDA h1 span
+{
+    color: rgb(253, 138, 105);
+}
+.reunion
+{
+    width: 45em;
+    height: 25em;
+}
+#test
+{
+    width: 100%;
+    height: 100%;
+    border: black 1px solid;
+}
+
+/* ... */
+
+.section_2
+{
+    background: rgb(209, 214, 218);
+    width: 100%;
+    height: 103em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.decouverte
+{
+    width: 100%;
+    height: auto;
+    padding: 5em;
+    display: grid;
+    align-items: center;
+    gap: 2em;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.decouverte p
+{
+    font-size: 2em;
+    width: 9em;
+    height: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    box-shadow: 15px 15px 4px rgb(197, 200, 203);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px black;
+}
+.box5
+{
+    width: 100%;
+    height: 5em;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(224, 231, 236);
+    border: 1px rgb(160, 162, 163) solid ;
+    border-bottom: none;
+    border-radius: 20px;
+    color: rgb(108, 117, 125);
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.box1, .box2, .box3, .box4
+{
+    grid-row: 1/1;
+}
+.box6, .box7, .box8, .box9
+{
+    grid-row: 3/3;
+}
+.box1, .box8
+{
+    background: rgb(251, 142, 111);
+}
+.box2, .box6
+{
+    background: rgb(17, 65, 125);
+}
+.box3, .box9
+{
+    background: rgb(78, 164, 143);
+}
+.box4, .box7
+{
+    background: rgb(170, 173, 173);
+}
+
+aside img
+{
+    
+    width: 90em;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px rgb(146, 146, 146);
+}
+
+/* ... */
+
+footer
+{
+    width: 100%;
+    height: 25em;
+    background: rgb(159,160,160);
+    background: linear-gradient(351deg, rgba(159,160,160,1) 0%, rgba(13,50,96,1) 72%);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contactez
+{
+    font-size: 1.2em;
+    color: aliceblue;
+    text-shadow: black 1px 1px 5px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-right: 15em;
+    border-right: #ffffff 2px solid;
+}
+.contactez h2
+{
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+.email, .tel
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #ffffff;
+}
+.email
+{
+    text-decoration: underline;
+}
+.social
 {
     display: flex;
+    width: 100%;
+}
+.social a, .social a:visited
+{
+    color: #ffffff;
+}
+.icone
+{
+    display: flex;
+    text-align: center;
+    margin: 0.5em;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+}
+.fa-brands
+{
+    color: rgb(17, 73, 133);
+    margin: auto;
+    text-shadow: none;
+    font-size: 1.5em;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+    width: 30em;
+    height: 12em;
+    color: rgb(240, 248, 255);
+    background: rgb(69,99,136);
+    background: linear-gradient(169deg, rgba(69,99,136,1) 0%, rgba(13,50,96,1) 50%);
+    box-shadow: 10px 10px 4px #53587a;
+    border-radius: 10px;
+}
+.formulaire
+{
+    display: block;
+    align-self: start;
+}
+#nom_prenom, #Entreprise, #Email
+{
+    width: 50em;
+    height: 3em;
+    border-radius: 5px;
+    border: none;
+}
+#btn_envoyer
+{
+    width: 50em;
+    height: 3.5em;
+    border-radius: 5px;
+    border: none;
+    margin-top: 1em;
+    background: rgb(242, 135, 107);
+    color: aliceblue;
+    text-shadow: black 1px 1px 5px;
+    size: 2em;
+}
+
+@media screen {
+    
 }
