@@ -25,6 +25,10 @@ header
     width: 7em;
     height: 5.5em;
 }
+#btn_burger
+{
+    display: none;
+}
 nav
 {
     width: 85%;
@@ -309,5 +313,83 @@ form
     #btn_envoyer
     {
         width: 40em;
+    }
+}
+@media screen and (max-width: 720px)
+{
+    header
+    {
+        background: rgb(255, 255, 255);
+    }
+    nav
+    {
+        display: none;
+    }
+    #btn_burger
+    {
+        display: block;
+        background: rgba(0, 0, 0, 0.4);
+        width: 4em;
+        height: 4em;
+        border-radius: 20%;
+        border: none;
+
+    }
+    .fa-bars
+    {
+        background: none;
+        color: white;
+        font-size: 3em;
+    }
+
+    /* ... */
+    section, article
+    {
+        width: 100%;
+    }
+    .section_1
+    {
+        flex-direction: column;
+        height: 50em;
+        width: 100%;
+        height: 40em;
+    }
+    .CDA
+    {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .CDA h1
+    {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .reunion
+    {
+        width: 100%;
+        margin-top: 2em;
+    }
+    #test
+    {
+        margin-left: 10%;
+        width: 80%;
+        height: auto;
+    }
+    #btn_burger:focus ~ nav
+    {
+        display: block;
+        position: absolute;
+        top: 15%;
+        left: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background: white;
+        opacity: 0.9;
+        border: black 2px solid;
+        width: 100%;
+        height: 80%;
     }
 }
