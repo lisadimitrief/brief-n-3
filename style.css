@@ -37,7 +37,7 @@ nav a,nav a:visited
 {
     color: rgb(58, 59, 59);
 }
-.selected
+.selected, nav a:hover
 {
     border-bottom: 2px solid rgb(253, 138, 105);
 }
@@ -279,6 +279,35 @@ form
     size: 2em;
 }
 
-@media screen {
-    
+@media all and (max-width:1920px)
+{
+    .section_2
+    {
+        height: 80em;
+    }
+    .decouverte p
+    {
+        width: 10em;
+        font-size: 1.4em;
+    }
+    aside img
+    {
+        width: 75em;
+    }
+    form
+    {
+        width: 20em;
+    }
+    .formulaire
+    {
+        font-size: 0.9em;
+    }
+    #nom_prenom, #Entreprise, #Email
+    {
+        width: 40em;
+    }
+    #btn_envoyer
+    {
+        width: 40em;
+    }
 }
