@@ -413,6 +413,8 @@ form
     header
     {
         background: rgb(255, 255, 255);
+        box-shadow: none;
+        border: none;
     }
     nav
     {
@@ -450,8 +452,9 @@ form
         width: 100%;
         height: 80%;
     }
-
+    
     /* ... */
+   
     section, article
     {
         width: 100%;
@@ -461,7 +464,7 @@ form
         flex-direction: column;
         height: 50em;
         width: 100%;
-        height: 40em;
+        height: 55em;
     }
     .CDA
     {
@@ -470,10 +473,12 @@ form
     }
     .CDA h1
     {
-        margin-top: 1em;
+        margin-top: 0.5em;
         margin-bottom: 0.5em;
+        font-size: 2em;
     }
-
+    
+   
     .reunion
     {
         width: 100%;
