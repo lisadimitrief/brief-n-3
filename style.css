@@ -241,7 +241,7 @@ footer
 {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 .social a, .social a:visited
 {
@@ -249,6 +249,7 @@ footer
 }
 .icone
 {
+    margin-right: 1em;
     display: flex;
     text-align: center;
     width: 2.5em;
